@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form design</title>
+        <style>
+            body{
+                background: #A32755;
+                margin: 0px;
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            
+            form[data-cssform="xyz"]{
+                width: 60%;
+                min-height:580px;
+                background: rgba(0,0,0,0.3);
+                margin: 75px auto;
+                padding-top: 20px ;
+
+            }
+            form[data-cssform="xyz"] > table{
+                width: 80%;
+                margin: 50px auto;
+    
+            }
+            form[data-cssform="xyz"] > table td{
+                padding: 5px;
+            }
+            form[data-cssform="xyz"] > table  input{
+                width: 100%;
+                height: 30px;
+
+            }
+            .mylable{
+                display: inline-block;
+                width: 32%;
+            }
+            .mylable input{
+                position: relative;
+                top:-10px;
+                right: -25px;
+            }
+            .lang{
+                width: 60%;
+                height: 30px;
+            }
+            .submit{
+               
+                font-size: 1em;
+                font-weight: bold;
+                border-radius: 30px;
+                border: none;
+                font-size: 1em;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <form data-cssform="xyz" >
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="fname">Name:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <input id="fname" type="text" name="name" placeholder="Your Name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="email">Email:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <input id="email" type="email" name="email" placeholder="your email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="password">password:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <input id="Password" type="Password" name="Password" placeholder="enter your password"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="phone">phone number:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <input id="phone" type="nuber" name="phonenumber" placeholder="enter your phone number"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="gen">Gender:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <lable class="mylable">
+                                Male:
+                                <input type= "radio" name="gender" value="Male"/>
+                            </lable>
+                            
+                            <lable class="mylable" >
+                                Female:
+                                <input type= "radio" name="gender" value="Female"/>
+                            </lable>
+                            
+                            <lable class="mylable">
+                                Other:
+                                <input type= "radio" name="gender" value="Other"/>
+                            </lable>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="language">language:</lable>
+                        </td>
+                        <td style="width:60%">
+                         <select name="language" class="lang">
+                            <option value="">Select language</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi </option>
+                         </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="Zipcode">Zipcode:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <input id="zincode" type="text" name="Zipcode"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <lable for="about">about:</lable>
+                        </td>
+                        <td style="width:60%">
+                            <textarea id="about" name="about" rows="5" cols="55" placeholder="Write about yourself "></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <input class="submit" type="submit" name="submit" value="Register" />
+                        </td>
+                        
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </form>
+        
+    </body>
+    </html>
